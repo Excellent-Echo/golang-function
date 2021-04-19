@@ -1,0 +1,5 @@
+package latihan
+
+func CovertRupiah() {
+
+}
