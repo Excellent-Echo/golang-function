@@ -2,16 +2,17 @@
 
 ## latihan 1
 
-buatlah sebuah fungsi untuk melakukan perhitungan biaya PPN dan pengeluaran saat belanja dari sebuah struk dengan pajak PPN sebesar 10% : 
+buatlah sebuah fungsi untuk melakukan perhitungan biaya PPN dan pengeluaran saat belanja dari sebuah struk dengan pajak PPN sebesar 10% :
 
 ```js
-Total(110000)  => 10.000 , 100.000 
-Total(220000)  => 20.000, 200.000 
-Total(500000)  => 45.454 , 454.545 
-Total(1000000)  => 90.909 , 909.090 
+Total(110000)  => 10.000 , 100.000
+Total(220000)  => 20.000, 200.000
+Total(500000)  => 45.454 , 454.545
+Total(1000000)  => 90.909 , 909.090
 ```
 
 ## latihan 2
+
 buatlah sebuah fungsi konversi dari nominal menjadi nilai rupiah
 
 ```js
@@ -33,7 +34,8 @@ GenapGanjil() => tidak ada angka
 ```
 
 ## latihan 4
-buatlah sebuah fungsi yang dapat menentukan apakah orang tersebut layak mendapat bantuan dari pemerintah dilihat dari jarak rumah kurang dari 100 meter, kemudian orang tersebut berkeluarga, dan berumur lebih dari 20 tahun. 
+
+buatlah sebuah fungsi yang dapat menentukan apakah orang tersebut layak mendapat bantuan dari pemerintah dilihat dari jarak rumah kurang dari 100 meter, kemudian orang tersebut berkeluarga, dan berumur lebih dari 20 tahun.
 
 ```go
 var data = map[string]string{
@@ -82,17 +84,14 @@ Terdapat struk belanja yang berisi nama produk dan total uang yang dibayar terma
 
 ```go
 var belanja1 = map[string]int{
-    "sepatu" : 1100000, 
-    "jaket" : 2200000, 
-    "topi" : 594000, 
+    "sepatu" : 1100000,
+    "jaket" : 2200000,
+    "topi" : 594000,
     "celana" : 803000,
-    "sweater" : 330000, 
+    "sweater" : 330000,
     "kausKaki" : 110000,
     "sabuk" : 55000,
 }
-// output 
+// output
 //  total PPN yang diterima sebesar 472.000
 ```
-
-
-
