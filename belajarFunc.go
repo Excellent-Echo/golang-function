@@ -20,6 +20,35 @@ func main() {
 	fmt.Printf("===Soal 3===\n\n")
 	genapGanjil := helper.GenapGanjil(2, 3, 4, 5, 6)
 	fmt.Printf("%v\n\n", genapGanjil)
+
+	//Soal4
+	var data = map[string]string{
+		"name":        "andi",
+		"umur":        "30",
+		"jarakRumah":  "50",
+		"berkeluarga": "ya",
+	}
+
+	var data2 = map[string]string{
+		"name":        "santi",
+		"umur":        "19",
+		"jarakRumah":  "80",
+		"berkeluarga": "ya",
+	}
+
+	var data3 = map[string]string{
+		"name":        "budi",
+		"umur":        "45",
+		"jarakRumah":  "120",
+		"berkeluarga": "ya",
+	}
+
+	checkBantuan1 := helper.BantuanCheck(data)
+	checkBantuan2 := helper.BantuanCheck(data2)
+	checkBantuan3 := helper.BantuanCheck(data3)
+
+	fmt.Printf("%v\n%v\n%v\n\n", checkBantuan1, checkBantuan2, checkBantuan3)
+
 }
 
 // hello.Hello()
