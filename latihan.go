@@ -66,7 +66,7 @@ func main() {
 	}
 
 	totalPrice := latihan.TotalVAT(belanja)
-	totalVAT, _ := latihan.ValueAddedTax(totalPrice) // Harga 45454 + PPN sebesar 4546
+	totalVAT, _ := latihan.ValueAddedTax(totalPrice) // total PPN yang diterima sebesar 472000
 
 	fmt.Printf("total PPN yang diterima sebesar %v\n", totalVAT)
 }
