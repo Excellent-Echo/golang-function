@@ -52,6 +52,9 @@ func main() {
 	fmt.Println("=============================================================")
 
 	// LATIHAN 5
+	results := latihan.ChangeNumtoStr(1234567890)
+	fmt.Println(results)
+
 	fmt.Println("=============================================================")
 
 	//LATIHAN 6
