@@ -48,6 +48,7 @@ func main() {
 	checkBantuan3 := helper.BantuanCheck(data3)
 	fmt.Printf("===Soal 4===\n\n")
 	fmt.Printf("%v\n%v\n%v\n\n", checkBantuan1, checkBantuan2, checkBantuan3)
+
 	//Soal 5
 	fmt.Printf("===Soal 5===\n\n")
 	stringRupiah := helper.ChangeNumtoStr(125689)
