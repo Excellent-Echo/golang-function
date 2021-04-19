@@ -11,6 +11,15 @@ func main() {
 	ppn, bayar := helper.Total(1000000)
 	fmt.Printf("ppn : %v\nbayar : %v\n\n", ppn, bayar)
 
+	//Soal2
+	fmt.Printf("===Soal 2===\n\n")
+	idr := helper.ChangeToIdr(1000000)
+	fmt.Printf("%v\n\n", idr)
+
+	//Soal3
+	fmt.Printf("===Soal 3===\n\n")
+	genapGanjil := helper.GenapGanjil(2, 3, 4, 5, 6)
+	fmt.Printf("%v\n\n", genapGanjil)
 }
 
 // hello.Hello()
