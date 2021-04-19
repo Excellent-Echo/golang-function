@@ -1,18 +1,11 @@
-package main
+package helper
 
 import (
 	"fmt"
 	"strconv"
 )
 
-func main() {
-	var data = map[string]string{
-		"name" : "andi",
-		"umur" : "30",
-		"jarakRumah" : "50",
-		"berkeluarga" : "ya",
-	}
-
+func GovermentHelper(data map[string]string) {
 	jarakRumah, _ := strconv.Atoi(data["jarakRumah"])
 	umur, _ := strconv.Atoi(data["umur"])
 
