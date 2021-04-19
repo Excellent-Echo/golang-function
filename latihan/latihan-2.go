@@ -1,11 +1,10 @@
-package main
+package latihan
 
 import (
-	"fmt"
 	"strconv"
 )
 
-func changeToIdr(nominal int) string {
+func ChangeToIdr(nominal int) string {
 	idr := strconv.Itoa(nominal)
 	thousand := 3
 	if nominal < 0 {
@@ -16,10 +15,4 @@ func changeToIdr(nominal int) string {
 		idr = idr[:i] + "," + idr[i:]
 	}
 	return "IDR " + idr + ",00"
-}
-
-func main() {
-	fmt.Println(changeToIdr(100000))
-	fmt.Println(changeToIdr(1200000))
-	fmt.Println(changeToIdr(140350000))
 }

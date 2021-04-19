@@ -1,4 +1,4 @@
-package main
+package latihan
 
 import (
 	"fmt"
@@ -83,13 +83,4 @@ func ChangeNumtoStr(input int) string {
 
 	}
 	return strings.Join(hasil, " ")
-}
-
-func main() {
-	fmt.Println(ChangeNumtoStr(100000))
-	fmt.Println(ChangeNumtoStr(111000))
-	fmt.Println(ChangeNumtoStr(5124000))
-	fmt.Println(ChangeNumtoStr(1543))
-	fmt.Println(ChangeNumtoStr(1234678))
-	fmt.Println(ChangeNumtoStr(0))
 }

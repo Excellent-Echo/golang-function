@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package latihan
 
 func GenapGanjil(numbers ...int) string {
 	countGanjil := 0
@@ -27,12 +23,4 @@ func GenapGanjil(numbers ...int) string {
 	}
 
 	return ""
-}
-
-func main() {
-	fmt.Println(GenapGanjil(1, 2, 3, 4, 5))
-	fmt.Println(GenapGanjil(4, 2))
-	fmt.Println(GenapGanjil(10, 20, 30, 13))
-	fmt.Println(GenapGanjil(30, 13, 13, 77, 33, 55, 17, 13))
-	fmt.Println(GenapGanjil())
 }
