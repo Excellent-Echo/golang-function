@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main()  {
 	var belanja1 = map[string]int{
@@ -20,5 +23,8 @@ func main()  {
 		//fmt.Println(pajak)
 		total += pajak
 	}
-	fmt.Println(total)
+
+	toString := strconv.Itoa(total)
+
+	fmt.Println("total PPN yang diterima sebesar " + toString)
 }
