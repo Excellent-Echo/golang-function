@@ -46,9 +46,28 @@ func main() {
 	checkBantuan1 := helper.BantuanCheck(data)
 	checkBantuan2 := helper.BantuanCheck(data2)
 	checkBantuan3 := helper.BantuanCheck(data3)
-
+	fmt.Printf("===Soal 4===\n\n")
 	fmt.Printf("%v\n%v\n%v\n\n", checkBantuan1, checkBantuan2, checkBantuan3)
+	//Soal 5
+	fmt.Printf("===Soal 5===\n\n")
+	stringRupiah := helper.ChangeNumtoStr(125689)
+	fmt.Println(stringRupiah)
+	fmt.Println("")
 
+	//Soal 6
+	fmt.Printf("===Soal 6===\n\n")
+	var belanja1 = map[string]int{
+		"sepatu":   1100000,
+		"jaket":    2200000,
+		"topi":     594000,
+		"celana":   803000,
+		"sweater":  330000,
+		"kausKaki": 110000,
+		"sabuk":    55000,
+	}
+	totalPPN := helper.TotalPPN(belanja1)
+
+	fmt.Printf("Total PPN : %v\n\n", totalPPN)
 }
 
 // hello.Hello()
