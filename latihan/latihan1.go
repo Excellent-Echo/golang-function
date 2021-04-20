@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-func Total(total int) (int, int) {
-	ppn := (total * 10) / 100
-	subtotal := total - ppn
-	return ppn, subtotal
+func Total(subtotal int) (int, int) {
+	ppn := (subtotal * 10) / 100
+	total := subtotal - ppn
+	return ppn, total
 }
 
 func main() {
