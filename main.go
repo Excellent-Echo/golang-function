@@ -66,12 +66,33 @@ func donationChecker(data map[string]string) {
 	fmt.Println(x, y)
 }
 
+//task 6
+func countPPN(datas map[string]int) {
+	var sum int
+	for _, data := range datas {
+
+		sum += data
+	}
+	res := sum / 11
+	fmt.Printf("Total PPN yang diteruma sebesar %d ", res)
+}
+
 func main() {
 	var data = map[string]string{
 		"name":        "andi",
 		"umur":        "30",
 		"jarakRumah":  "50",
 		"berkeluarga": "ya",
+	}
+
+	var belanja1 = map[string]int{
+		"sepatu":   1100000,
+		"jaket":    2200000,
+		"topi":     594000,
+		"celana":   803000,
+		"sweater":  330000,
+		"kausKaki": 110000,
+		"sabuk":    55000,
 	}
 
 	//task 1
@@ -85,4 +106,10 @@ func main() {
 
 	//task 4
 	donationChecker(data)
+
+	task 5
+	Skip
+
+	//task 6
+	countPPN(belanja1)
 }
