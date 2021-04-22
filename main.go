@@ -51,7 +51,29 @@ func GenapGanjil(numbers ...int) {
 	}
 }
 
+//task 4
+func donationChecker(data map[string]string) {
+	nama := data["name"]
+	umur, x := strconv.Atoi(data["umur"])
+	jarak, y := strconv.Atoi(data["jarakRumah"])
+	berkeluarga := data["berkeluarga"]
+
+	if umur >= 20 && jarak <= 100 && berkeluarga == "ya" {
+		fmt.Println(nama + " layak mendapat bantuan dari pemerintah")
+	} else {
+		fmt.Println(nama + " tidak layak mendapat bantuan dari pemerintah")
+	}
+	fmt.Println(x, y)
+}
+
 func main() {
+	var data = map[string]string{
+		"name":        "andi",
+		"umur":        "30",
+		"jarakRumah":  "50",
+		"berkeluarga": "ya",
+	}
+
 	//task 1
 	Total(110000)
 
@@ -60,4 +82,7 @@ func main() {
 
 	//task 3
 	GenapGanjil(1, 2, 3, 4, 5)
+
+	//task 4
+	donationChecker(data)
 }
