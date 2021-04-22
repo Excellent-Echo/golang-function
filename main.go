@@ -31,10 +31,33 @@ func changeToIdr(nominal int) {
 
 }
 
+func GenapGanjil(numbers ...int) {
+	var even, odd int
+	for _, number := range numbers {
+		if number%2 == 0 {
+			even++
+		} else if number%2 != 0 {
+			odd++
+		}
+	}
+	// fmt.Println(odd)
+	// fmt.Println(even)
+	if even > odd {
+		fmt.Println("angka terbanyak adalah genap")
+	} else if even < odd {
+		fmt.Println("angka terbanyak adalah ganjil")
+	} else {
+		fmt.Println("angka ganjil dan genap sama banyak")
+	}
+}
+
 func main() {
 	//task 1
 	Total(110000)
 
 	//task 2
 	changeToIdr(1000000)
+
+	//task 3
+	GenapGanjil(1, 2, 3, 4, 5)
 }
