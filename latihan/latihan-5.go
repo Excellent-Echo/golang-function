@@ -1,7 +1,9 @@
 package latihan
 
 import (
+	"errors"
 	"fmt"
+	"strconv"
 	"strings"
 )
 
@@ -17,7 +19,9 @@ func groupOfThreeArray(number int) []int {
 	return array
 }
 
-func ChangeNumtoStr(input int) string {
+func ChangeNumtoStr(input string) (string, error) {
+	number, err := strconv.Atoi(input)
+
 	satuan := [...]string{"", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan"}
 	belasan := [...]string{"sepuluh", "sebelas", "dua belas", "tiga belas", "empat belas", "lima belas", "enam belas", "tujuh belas", "delapan belas", "sembilan belas"}
 	puluhan := [...]string{"", "sepuluh", "dua puluh", "tiga puluh", "empat puluh", "lima puluh", "enam puluh", "tujuh puluh", "delapan puluh", "sembilan puluh"}
@@ -25,16 +29,16 @@ func ChangeNumtoStr(input int) string {
 
 	hasil := []string{}
 
-	if input < 0 {
+	if number < 0 {
 		hasil = append(hasil, "minus")
-		input *= -1
+		number *= -1
 	}
 
-	// ubah inputan ke array triplets
-	triplets := groupOfThreeArray(input)
+	// ubah numberan ke array triplets
+	triplets := groupOfThreeArray(number)
 
-	if len(triplets) == 0 {
-		return "nol"
+	if input == "0" {
+		return "nol", nil
 	}
 
 	for i := len(triplets) - 1; i >= 0; i-- {
@@ -82,5 +86,11 @@ func ChangeNumtoStr(input int) string {
 		}
 
 	}
-	return strings.Join(hasil, " ")
+
+	// error handling
+	if err != nil {
+		return "", errors.New("Input incorrect: Please input a number")
+	} else {
+		return strings.Join(hasil, " "), nil
+	}
 }

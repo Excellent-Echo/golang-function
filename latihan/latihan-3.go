@@ -1,5 +1,7 @@
 package latihan
 
+import "fmt"
+
 func GenapGanjil(numbers ...int) string {
 	countGanjil := 0
 	countGenap := 0
@@ -17,9 +19,9 @@ func GenapGanjil(numbers ...int) string {
 	}
 
 	if countGanjil > countGenap {
-		return "angka terbanyak adalah ganjil"
+		fmt.Println("angka terbanyak adalah ganjil")
 	} else if countGenap > countGanjil {
-		return "angka terbanyak adalah genap"
+		fmt.Println("angka terbanyak adalah genap")
 	}
 
 	return ""
