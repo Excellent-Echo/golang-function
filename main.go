@@ -12,11 +12,11 @@ func main() {
 	fmt.Print("Input total belanja: ")
 	fmt.Scanln(&input)
 	pajak, harga, err := latihan.Belanja(input)
-	// pajak, harga := latihan.Belanja(220000)
-	// pajak, harga := latihan.Belanja(500000)
-	// pajak, harga := latihan.Belanja(1000000)
+	// pajak, harga, err := latihan.Belanja(220000)
+	// pajak, harga, err := latihan.Belanja(500000)
+	// pajak, harga, err := latihan.Belanja(1000000)
 
-	// Handle error
+	// Handle error latihan 1
 	if err != nil {
 		fmt.Println(err.Error())
 	} else {
@@ -25,13 +25,23 @@ func main() {
 
 	fmt.Println("-------------------------------")
 
-	// fmt.Println("Latihan 2")
-	// // Latihan 2
-	// fmt.Println(latihan.ChangeToIdr(100000))
-	// fmt.Println(latihan.ChangeToIdr(1200000))
-	// fmt.Println(latihan.ChangeToIdr(140350000))
+	fmt.Println("Latihan 2")
+	// Latihan 2
+	var input2 string
+	fmt.Print("Input number: ")
+	fmt.Scanln(&input2)
+	result2, err := latihan.ChangeToIdr(input2)
+	// result2, err := latihan.ChangeToIdr(1200000)
+	// result2, err := latihan.ChangeToIdr(140350000)
 
-	// fmt.Println("-------------------------------")
+	// Handle error latihan 2
+	if err != nil {
+		fmt.Println(err.Error())
+	} else {
+		fmt.Println(result2)
+	}
+
+	fmt.Println("-------------------------------")
 
 	// fmt.Println("Latihan 3")
 	// // Latihan 3
