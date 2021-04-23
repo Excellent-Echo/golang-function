@@ -37,6 +37,11 @@ func ChangeNumtoStr(input string) (string, error) {
 	// ubah numberan ke array triplets
 	triplets := groupOfThreeArray(number)
 
+	// error handling
+	if err != nil {
+		return "", errors.New("Input incorrect: Please input a number")
+	}
+
 	if input == "0" {
 		return "nol", nil
 	}
@@ -87,10 +92,5 @@ func ChangeNumtoStr(input string) (string, error) {
 
 	}
 
-	// error handling
-	if err != nil {
-		return "", errors.New("Input incorrect: Please input a number")
-	} else {
-		return strings.Join(hasil, " "), nil
-	}
+	return strings.Join(hasil, " "), nil
 }

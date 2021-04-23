@@ -8,6 +8,10 @@ import (
 func ChangeToIdr(nominal string) (string, error) {
 	input, err := strconv.Atoi(nominal)
 
+	if err != nil {
+		return "", errors.New("Input incorrect: Please input a number")
+	}
+
 	idr := strconv.Itoa(input)
 	thousand := 3
 	if input < 0 {
@@ -18,9 +22,5 @@ func ChangeToIdr(nominal string) (string, error) {
 		idr = idr[:i] + "," + idr[i:]
 	}
 
-	if err != nil {
-		return "", errors.New("Input incorrect: Please input a number")
-	} else {
-		return "IDR " + idr + ",00", nil
-	}
+	return "IDR " + idr + ",00", nil
 }
