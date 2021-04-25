@@ -11,6 +11,7 @@ func main() {
 	helper.Total(220000)
 	helper.Total(500000)
 	helper.Total(1000000)
+	helper.Total(0)
 
 	fmt.Println("-----------------------------------")
 
