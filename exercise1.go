@@ -1,21 +1,20 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
-	"strconv"
+	"functionGo/GoFunc"
 )
 
 func main() {
+	var input string
+	fmt.Printf("Input total shopping: ")
+	fmt.Scanln(&input)
+	tax, price, err := GoFunc.Shopping(input)
 
-	scanner := bufio.NewScanner(os.Stdin)
-	fmt.Printf("masukkan input : ")
-	scanner.Scan()
-	hargaawal, _ := strconv.ParseInt(scanner.Text(), 10, 64)
-
-	var pajak = hargaawal * 10 / 100
-	total := hargaawal + pajak
-	fmt.Printf("Harga awal : %v, Harga PPN : %v, Harga Total Harga : %v", hargaawal, pajak, total)
-
+	switch {
+	case err != nil:
+		fmt.Println(err.Error())
+	default:
+		fmt.Printf("Tax: %v, Price: %v\n", tax, price)
+	}
 }
