@@ -19,6 +19,7 @@ func main() {
 	fmt.Println(helper.ChangeToIdr(100000))
 	fmt.Println(helper.ChangeToIdr(1200000))
 	fmt.Println(helper.ChangeToIdr(140350000))
+	fmt.Println(helper.ChangeToIdr(0))
 
 	fmt.Println("-----------------------------------")
 
