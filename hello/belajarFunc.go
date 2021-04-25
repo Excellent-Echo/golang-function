@@ -1,11 +1,11 @@
-package main
+package hello
 
 import (
 	"fmt"
 	"functionGo/hello"
 )
 
-func main() {
+func BelajarFunc() {
 	hello.Hello()
 
 	sum, avg, check := hello.Sum(10, 11, 12)
