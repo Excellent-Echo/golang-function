@@ -10,7 +10,7 @@ func Total(input string) (tax int, price int, err error) {
 
 	switch {
 	case err != nil:
-		return 0, 0, errors.New("NAN")
+		return 0, 0, errors.New("Incorrect input")
 	}
 
 	tax = priceTotal / 11
