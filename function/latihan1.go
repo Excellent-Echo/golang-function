@@ -1,10 +1,19 @@
 package function
 
-func TotalPrice(total int) (int, int) {
-	// var tax = int(10 / 100)
-	var price = (100 * total) / 110
+import (
+	"errors"
+	"strconv"
+)
 
-	var ppn = total - price
-	return ppn, price
+func TotalPrice(total string) (int, int, error) {
+	totalPrice, err := strconv.Atoi(total)
+	if err != nil {
+		return 0, 0, errors.New("invalid input, must be number")
+	}
+	var price = (100 * totalPrice) / 110
+
+	ppn := totalPrice - price
+
+	return ppn, price, err
 
 }

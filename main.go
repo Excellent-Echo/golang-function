@@ -39,9 +39,9 @@ var belanja1 = map[string]int{
 func main() {
 
 	fmt.Println("Latihan 1")
-	fmt.Println(function.TotalPrice(110000))
-	fmt.Println(function.TotalPrice(220000))
-	fmt.Println(function.TotalPrice(500000))
+	fmt.Println(function.TotalPrice("sdads"))
+	fmt.Println(function.TotalPrice("220000"))
+	fmt.Println(function.TotalPrice("500000"))
 	fmt.Println("\n")
 
 	fmt.Println("Latihan 2")
