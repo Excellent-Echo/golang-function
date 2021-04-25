@@ -5,25 +5,26 @@ import (
 	"strconv"
 )
 
-func ChangeToIdr(nominal string) (string, error) {
-	input, err := strconv.Atoi(nominal)
+func ChangeToIdr(input string) (string, error) {
+	nominal, err := strconv.Atoi(input)
 
 	switch {
 	case err != nil:
-		return "", errors.New("Input incorrect: Please input a number")
+		return "", errors.New("Incorrect input")
 	}
 
-	idr := strconv.Itoa(input)
+	money := strconv.Itoa(nominal)
 	thousand := 3
 
 	switch {
-	case input < 0:
+	case nominal < 0:
 		thousand++
 	}
-	for i := len(idr); i > thousand; {
+
+	for i := len(money); i > thousand; {
 		i -= 3
-		idr = idr[:i] + "," + idr[i:]
+		money = money[:i] + "." + money[i:]
 	}
 
-	return "IDR " + idr + ",00", nil
+	return "IDR " + money + ",00", nil
 }

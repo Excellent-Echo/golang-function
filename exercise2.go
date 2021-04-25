@@ -7,13 +7,14 @@ import (
 
 func main() {
 	var input string
-	fmt.Print("Input number: ")
+	fmt.Print("Input nominal: ")
 	fmt.Scanln(&input)
-	result2, err := GoFunc.ChangeToIdr(input)
+	result, err := GoFunc.ChangeToIdr(input)
+
 	switch {
 	case err != nil:
 		fmt.Println(err.Error())
 	default:
-		fmt.Println(result2)
+		fmt.Println(result)
 	}
 }
