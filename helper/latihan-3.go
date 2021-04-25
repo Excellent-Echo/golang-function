@@ -12,11 +12,11 @@ func GenapGanjil(number ...int) {
 	)
 
 	for _, value := range number {
-		if value % 2 == 0 {
+		if value%2 == 0 {
 			genap++
 			//fmt.Println("ini adalah genap", value)
 		}
-		if value % 2 == 1 {
+		if value%2 == 1 {
 			ganjil++
 			//fmt.Println("ini adalah ganjil", value)
 		}
@@ -24,9 +24,9 @@ func GenapGanjil(number ...int) {
 	//fmt.Println(genap)
 	//fmt.Println(ganjil)
 	if genap > ganjil {
-		fmt.Println("Genap lebih banyak")
+		fmt.Println("angka terbanyak adalah genap")
 	}
 	if ganjil > genap {
-		fmt.Println("Ganjil lebih banyak")
+		fmt.Println("angka terbanyak adalah ganjil")
 	}
 }
