@@ -9,7 +9,7 @@ func main() {
 	var input string
 	fmt.Printf("Input total shopping: ")
 	fmt.Scanln(&input)
-	tax, price, err := GoFunc.Shopping(input)
+	tax, price, err := GoFunc.Total(input)
 
 	switch {
 	case err != nil:

@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-func Shopping(input string) (tax int, price int, err error) {
+func Total(input string) (tax int, price int, err error) {
 	priceTotal, err := strconv.Atoi(input)
 
 	switch {
