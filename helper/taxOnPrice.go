@@ -2,8 +2,9 @@ package helper
 
 import "fmt"
 
-func TaxOnPrice(price int){
-	tax := (price * 10) / 100
-	priceBeforeTax := price - tax
-	fmt.Printf("Harga normal : %v dan Pajak : %v", priceBeforeTax, tax)
+func FindPPN(total int) {
+	beforePpn := total * 10 / 11
+	ppn := total / 11
+	fmt.Println("Sebelum Pajak :", beforePpn)
+	fmt.Println("Pajak : ", ppn)
 }
