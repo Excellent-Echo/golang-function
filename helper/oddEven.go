@@ -1,6 +1,8 @@
 package helper
 
-func OddEven(numbers ...int) string {
+import "fmt"
+
+func OddEven(numbers ...int) {
 	even, odd := 0, 0
 
 	for _, num := range numbers {
@@ -12,11 +14,11 @@ func OddEven(numbers ...int) string {
 	}
 
 	if even > odd {
-		return "angka terbanyak adalah genap"
+		fmt.Println("Angka terbanyak adalah genap")
 	} else if even < odd {
-		return "angka terbanyak adalah ganjil"
+		fmt.Println("Angka terbanyak adalah ganjil")
 	} else {
-		return "tidak ada angka"
+		fmt.Println("Unknown")
 	}
 
 }
