@@ -51,6 +51,20 @@ func main() {
 	fmt.Println("============LATIHAN 5==========")
 	helper.IntToString(2532000)
 
+	//Latihan 6 : Total PPN
+	fmt.Println("============LATIHAN 5==========")
+	var belanja1 = map[string]int{
+		"sepatu":   1100000,
+		"jaket":    2200000,
+		"topi":     594000,
+		"celana":   803000,
+		"sweater":  330000,
+		"kausKaki": 110000,
+		"sabuk":    55000,
+	}
+
+	helper.TotalTax(belanja1)
+
 
 
 
