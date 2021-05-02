@@ -12,10 +12,10 @@ func main() {
 	fmt.Println("============LATIHAN 1==========")
 	helper.TaxOnPrice(500000)
 
-	/*Latihan 2 : Change to IDR
+	//Latihan 2 : Change to IDR
 	fmt.Println("============LATIHAN 2==========")
-	helper.ChangeToIdr("25000")
-	*/ //not finished
+	helper.ToIdr(25000)
+	
 
 	//Latihan 3 : oddEven
 	fmt.Println("============LATIHAN 3==========")
