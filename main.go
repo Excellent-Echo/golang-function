@@ -41,10 +41,15 @@ func main() {
 		"berkeluarga": "ya",
 	}
 
+	//Latihan 4 : Stimulus Check
 	fmt.Println("============LATIHAN 4==========")
 	helper.StimulusChecks(data)
 	helper.StimulusChecks(data2)
 	helper.StimulusChecks(data3)
+
+	//Latihan 5 : Int To String
+	fmt.Println("============LATIHAN 5==========")
+	helper.IntToString(2532000)
 
 
 
